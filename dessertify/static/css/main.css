@@ -1,0 +1,30 @@
+body
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main
+{
+    flex: 1 0 auto;
+}
+
+img
+{
+    height:100%;
+    width:100%;
+    margin:1rem;
+}
+
+#chocolates
+{
+    background-color: #772f1a;
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+    font-size: 50px;
+}
+
+#slider
+{
+    height: 100vh !important;
+}
