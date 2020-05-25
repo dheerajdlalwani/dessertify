@@ -38,34 +38,73 @@
     <main>
         {% block content %}
 
-        <div class="carousel carousel-slider center" id="slider">
-        <div class="carousel-fixed-item center">
-            <a href="" class="btn waves-effect red white-text">Order now! >>></a>
-        </div>
-        <div class="carousel-item white-text" id="chocolates" href="#one!">
-            <h1>Chocolates!!</h1>
-            <div class="row">
-                <div class="col s4 m4 l4">
-                    <img src="{% static '/images/Chocolates_7.jpg' %}">
-                </div>
-                <div class="col s4 m4 l4 flow-text">
-                    <p class="white-text">Indulge into the sweetness of melt in the mouth Chocolates</p>
+        <div class="carousel carousel-slider" id="slider">
+            <div class="carousel-item white-text" id="chocolates" href="#one!">
+                <div class="row">
+                    <div class="col s4 m4 l4">
+                        <img src="{% static '/images/Chocolates_7.jpg' %}">
+                        <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                    </div>
+                    <div class="col s4 m4 l4 flow-text" id="title">
+                        <h1>Chocolates!!</h1>
+                        <p class="white-text" id="message">Indulge into the sweetness of melt in the mouth Chocolates</p>
+                    </div>
+                     <div class="col s4 m4 l4">
+                         <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                        <img src="{% static '/images/Chocolate_Modaks_1.jpg' %}">
+                    </div>
+
                 </div>
             </div>
+        <div class="carousel-item white-text" id="cakes" href="#two!">
+            <div class="row">
+                <div class="col s4 m4 l4">
+                        <img src="{% static '/images/Cakes_13.jpg' %}">
+                        <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                </div>
+                <div class="col s4 m4 l4 flow-text" id="title">
+                    <h1>Cakes!!</h1>
+                    <p class="white-text" id="message">Try a spoonful of the creamiest of cakes you will ever have in your life!</p>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                    <img src="{% static '/images/Cakes_9.jpg' %}">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item white-text" id="donuts" href="#three!">
+            <div class="row">
+                <div class="col s4 m4 l4">
+                    <img src="{% static '/images/Donut_1.jpg' %}">
+                    <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                </div>
+                <div class="col s4 m4 l4 flow-text" id="title">
+                    <h1>Donuts!!</h1>
+                    <p class="white-text" id="message">It's time to get <strike>MAD</strike> CRAZY 🤩 OVER DONUTS</p>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                    <img src="{% static '/images/Donut_3.jpg' %}">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item brown-text text-darken-4" id="kajuballs" href="#four!">
+            <div class="row">
+                <div class="col s4 m4 l4">
+                    <img src="{% static '/images/Kaju_balls_2.jpg' %}">
+                    <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                </div>
+                <div class="col s4 m4 l4 flow-text" id="title">
+                    <h1>Kaju Balls!!</h1>
+                    <p class="brown-text text-darken-4" id="message">Let us redefine Kaju Katris to a whole new level!! </p>
+                </div>
+                <div class="col s4 m4 l4">
+                    <a href="{% url 'shop' %}" class="btn btn-large waves-effect  red white-text" id="orderBtn">Order now! >>></a>
+                    <img src="{% static '/images/Kaju_balls_5.jpg' %}">
+                </div>
+            </div>
+        </div>
 
-        </div>
-        <div class="carousel-item blue white-text" href="#one!">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-        </div>
-        <div class="carousel-item pink white-text" href="#one!">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-        </div>
-        <div class="carousel-item light-blue white-text" href="#one!">
-            <h2>First Panel</h2>
-            <p class="white-text">This is your first panel</p>
-        </div>
     </div>
 
 
