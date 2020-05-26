@@ -5,21 +5,34 @@
 
 {% block content %}
 
-    <h1>Shop</h1>
+<div class="row">
+    <div class="col s12 m4 l3 center" id="catNav">
+        {% for i in arr %}
+        <div class="section">
+            <p id="message">{{i}}</p>
+            <div class="divider"></div>
+        </div>
+        {% endfor %}
 
-    <p class="white-text message2">Overloaded sweetness coming soon!!!!</p>
-
-<style>
-    body
-    {
-        background-image: url({% static '/images/Cakes_19.jpg' %});
-    }
-    .message2
-    {
-        font-size: 50px !important;
-        font-weight: 600;
-    }
-
-</style>
+    </div>
+    <div class="col s12 m8 l9 center fixed" id="prodDisp">
+        <div class="row"><h1>Cakes</h1></div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static '/images/Cakes_13.jpg' %}">
+                        <span class="card-title">Card Title</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Chocolate Truffle cake</p>
+                        <h6>50</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}

@@ -8,7 +8,8 @@ def home(request):
 
 
 def shop(request):
-    context = {}
+    arr = ["Cakes", "Chocolates", "Cupcakes", "Donuts", "Kaju Balls", "Indian Desserts", ""]
+    context = {"arr" : arr}
     return render(request, 'shop/shop.html', context)
 
 
